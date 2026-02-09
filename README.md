@@ -1,13 +1,13 @@
-#JAVA
-#PW5 : JDBC
+# JAVA
+# PW5 : JDBC
 
-##Autheur :
+## Autheur :
 Léo Lammar
 
-##Email
+## Email
 leo.lammar@student.junia.com
 
 
-#Description
+# Description
 
 Ce projet Java met en place une architecture DAO afin de gérer l’accès à une base de données SQLite contenant des films et leurs genres associés.
