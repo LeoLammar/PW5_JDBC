@@ -75,13 +75,11 @@ public class MovieDaoTestCase {
 	 public void shouldAddMovie() {
 		MovieDao movieDao = new MovieDao();
 		Genre genre = new Genre(1, "Drama");
-		Movie movie = new Movie("Le chant du loup", LocalDate.of(2019, 2, 20), genre, 119, "Antonin Baudry", "Un jeune homme a le don rare de reconnaître chaque son qu’il entend. A bord d’un sous-marin nucléaire français, tout repose sur lui, l’Oreille d’Or. Réputé infaillible, il commet pourtant une erreur qui met l’équipage en danger de mort. Il veut retrouver la confiance de ses camarades mais sa quête les entraîne dans une situation encore plus dramatique.Dans le monde de la dissuasion nucléaire et de la désinformation, ils se retrouvent tous pris au piège d’un engrenage incontrôlable.");
+		Movie movie = new Movie("Joker", LocalDate.of(2019, 10, 9), genre, 122, "Todd Phillips", "Dans les années 1980, à Gotham City, Arthur Fleck, un comédien de stand-up raté est agressé alors qu'il erre dans les rues grimé en clown.");
 		Movie result = movieDao.addMovie(movie);
-
 		assertThat(result).isNotNull();
 		assertThat(result.getId()).isNotNull();
-		assertThat(result.getTitle()).isEqualTo("Le chant du loup");
-
+		assertThat(result.getTitle()).isEqualTo("Joker");
 		List<Movie> allMovies = movieDao.listMovies();
 		assertThat(allMovies).hasSize(4);
 	 }
