@@ -1,5 +1,4 @@
-# JAVA
-# PW5 : JDBC
+# JAVA  PW5 : JDBC
 
 ## Autheur :
 Léo Lammar
